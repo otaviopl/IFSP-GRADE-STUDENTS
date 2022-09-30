@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="modelo.js"></script>
+    <meta charset="utf-8">
+    <title>AngularBoletimNotas</title>
+    <body>
+        <header>
+            <h1>Boletim IFSP</h1>
+        </header>
+        <main>
+            <div class="colunms">
+                <form class="colunms"></form>
+            </div>
+            <div class="field">
+                <label class="label">Digite a quantidade de alunos que deseja cadastrar...</label>
+            </div>
+            <div class="control">
+                <input id="controle" type="number" min="1">
+               
+            </div>
+            <div class="buttons">
+                <button class="button-is-link" onclick="aparecer()">Cadastrar</button>
+                <div id="botoes_ocultos">
+                    <button class="button-is-primary" onclick="adicionaLinha()">Adicionar</button>
+                    <button class="button-is-warning"onclick="apagar()" >Remover</button>
+                    <button class="button-is-danger" onclick="remover_pior_media()">Remover a pior média</button>
+                </div>
+            <div id="tabela_oculta">
+                <table id="tbl">
+                    <thead>
+                    <tr>
+                      <th>Nome</th>
+                      <th>Nota 1</th>
+                      <th>Nota 2</th>
+                      <th>Nota 3</th>
+                      <th>Média</th>
+                      <th>Resultado</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tabela">
+                        
+                       
+
+                        
+    
+                    </tbody>
+                    </table>  
+                    <thead>     
+            </div> 
+            </div>
+            
+            
+
+        </main>
+    </body>
+  
